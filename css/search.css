@@ -1,0 +1,33 @@
+.search-container {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#search-input {
+  color: white;
+  font-size: large;
+  width: 800px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 30px;
+  border: none;
+}
+#search-input:hover {
+  transform: scale(1.01);
+}
+#search-button {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  height: 50px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+#search-button:active {
+  color: white;
+}
