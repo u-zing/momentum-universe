@@ -33,6 +33,9 @@ function setRandomBackground() {
 window.addEventListener("load", setRandomBackground);
 choiceBackground.addEventListener("click", setRandomBackground);
 
+audio.play();
+toggleAudioBtn.classList.add("playing");
+
 function playPauseClick() {
   if (audio.paused) {
     audio.play();
