@@ -23,12 +23,16 @@ document.body.addEventListener("mouseout", (event) => {
 });
 
 const audio = document.getElementById("space-audio");
-const toggleAudioBtn = document.getElementById("toggle-audio");
+const toggleAudioBtn = document.querySelector(".toggle-audio");
 
-toggleAudioBtn.addEventListener("click", () => {
+function playPauseClick() {
   if (audio.paused) {
     audio.play();
+    toggleAudioBtn.classList.add("playing");
   } else {
     audio.pause();
+    toggleAudioBtn.classList.remove("playing");
   }
-});
+}
+
+toggleAudioBtn.addEventListener("click", playPauseClick);

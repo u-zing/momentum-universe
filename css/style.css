@@ -69,7 +69,7 @@ input::placeholder {
   z-index: -1; /* 배경으로 설정 */
   object-fit: cover;
 }
-#toggle-audio {
+.toggle-audio {
   font-size: 30px;
   text-shadow: 0 0 20px white;
   cursor: pointer;
@@ -79,12 +79,13 @@ input::placeholder {
   display: inline-block;
   transition: transform 0.5s ease;
 }
-#toggle-audio:hover {
-  transform: scale(1.1);
+
+.toggle-audio.playing {
+  animation: rotateIcon 3s infinite linear; /* 애니메이션 활성화 */
 }
 
-#toggle-audio {
-  animation: rotateIcon 3s infinite linear;
+.toggle-audio:hover {
+  transform: scale(1.1);
 }
 
 @keyframes rotateIcon {
