@@ -45,3 +45,10 @@ h1 {
 #login-form input[type="submit"] {
   margin-top: 10px;
 }
+#log-out {
+  margin: 20px;
+  cursor: pointer;
+}
+#log-out:hover {
+  text-shadow: 0 0 20px white;
+}

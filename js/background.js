@@ -1,11 +1,4 @@
-const videos = [
-  "001.mp4",
-  "002.mp4",
-  "003.mp4",
-  "004.mp4",
-  "005.mp4",
-  "006.mp4",
-];
+const videos = ["002.mp4", "003.mp4", "004.mp4", "005.mp4", "006.mp4"];
 
 const randomVideo = videos[Math.floor(Math.random() * videos.length)];
 const backgroundVideo = document.createElement("video");

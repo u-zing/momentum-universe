@@ -47,6 +47,7 @@
 }
 #todo-icon:hover {
   transform: scale(1.1);
+  text-shadow: 0 0 20px white;
 }
 #todo-list {
   display: flex;

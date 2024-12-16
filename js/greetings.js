@@ -1,6 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input[type='text']"); // 특정 input 타입을 선택
 const greeting = document.querySelector("#greeting");
+const logOutButton = document.querySelector("#log-out");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -30,4 +31,14 @@ function paintGreetings(username) {
   greeting.classList.remove("text-animated");
   void greeting.offsetWidth; // 리플로우 강제 발생
   greeting.classList.add("text-animated");
+
+  logOutButton.classList.remove(HIDDEN_CLASSNAME);
 }
+
+logOutButton.addEventListener("click", () => {
+  localStorage.removeItem(USERNAME_KEY); // 로컬스토리지에서 사용자 이름 제거
+  greeting.classList.add(HIDDEN_CLASSNAME); // 인사말 숨기기
+  loginForm.classList.remove(HIDDEN_CLASSNAME); // 로그인 폼 다시 보이기
+  loginInput.value = ""; // 입력 필드 초기화
+  logOutButton.classList.add(HIDDEN_CLASSNAME); // 로그아웃 버튼 숨기기
+});

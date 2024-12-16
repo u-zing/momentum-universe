@@ -3,6 +3,8 @@
 @import "login.css";
 @import "todo.css";
 @import "search.css";
+@import "star.css";
+
 * {
   box-sizing: border-box;
   outline: none;
