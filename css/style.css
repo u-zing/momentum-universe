@@ -80,13 +80,12 @@ input::placeholder {
   font-size: 30px;
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 25px;
   display: inline-block;
-  transition: transform 0.5s ease;
 }
 
 .toggle-audio.playing {
-  animation: rotateIcon 3s infinite linear; /* 애니메이션 활성화 */
+  animation: rotateIcon 4s infinite linear; /* 애니메이션 활성화 */
 }
 
 @keyframes rotateIcon {

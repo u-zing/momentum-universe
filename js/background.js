@@ -1,4 +1,5 @@
 const videos = ["002.mp4", "003.mp4", "004.mp4", "005.mp4", "006.mp4"];
+
 const choiceBackground = document.querySelector(".choice-bg");
 const audio = document.getElementById("space-audio");
 const toggleAudioBtn = document.querySelector(".toggle-audio");
@@ -32,9 +33,6 @@ function setRandomBackground() {
 }
 window.addEventListener("load", setRandomBackground);
 choiceBackground.addEventListener("click", setRandomBackground);
-
-audio.play();
-toggleAudioBtn.classList.add("playing");
 
 function playPauseClick() {
   if (audio.paused) {
