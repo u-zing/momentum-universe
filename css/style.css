@@ -9,6 +9,13 @@
   box-sizing: border-box;
   outline: none;
 }
+i {
+  text-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+i:hover {
+  transform: scale(1.1);
+}
 
 .hidden,
 #login-form input:last-child {
@@ -71,8 +78,6 @@ input::placeholder {
 }
 .toggle-audio {
   font-size: 30px;
-  text-shadow: 0 0 20px white;
-  cursor: pointer;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -82,10 +87,6 @@ input::placeholder {
 
 .toggle-audio.playing {
   animation: rotateIcon 3s infinite linear; /* 애니메이션 활성화 */
-}
-
-.toggle-audio:hover {
-  transform: scale(1.1);
 }
 
 @keyframes rotateIcon {

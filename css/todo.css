@@ -41,14 +41,23 @@
   position: absolute;
   bottom: 5px;
   right: 10px;
-  cursor: pointer;
   font-size: 40px;
   padding: 10px;
+  animation: upAndDownIcon 5s ease-in;
 }
-#todo-icon:hover {
-  transform: scale(1.1);
-  text-shadow: 0 0 20px white;
+@keyframes upAndDownIcon {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
+
 #todo-list {
   display: flex;
   flex-direction: column;
