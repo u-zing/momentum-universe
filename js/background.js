@@ -21,3 +21,14 @@ document.body.addEventListener("mouseout", (event) => {
     backgroundVideo.playbackRate = 1;
   }
 });
+
+const audio = document.getElementById("space-audio");
+const toggleAudioBtn = document.getElementById("toggle-audio");
+
+toggleAudioBtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
