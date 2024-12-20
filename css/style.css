@@ -85,7 +85,7 @@ input::placeholder {
 }
 
 .toggle-audio.playing {
-  animation: rotateIcon 4s infinite linear; /* 애니메이션 활성화 */
+  animation: rotateIcon 4s infinite linear;
 }
 
 @keyframes rotateIcon {
